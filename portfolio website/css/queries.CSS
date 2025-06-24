@@ -1,0 +1,114 @@
+/* ----- LG - SMALL LAPTOPS: 1024px - 1280px -----*/
+
+@media (max-width: 72rem) {
+  /* 1150px / 16px = 72rem */
+  /* 72rem x 16px = 1152px */
+
+  html {
+    font-size: 56.25%;
+    /* 9px / 16px = 56.25%*/
+  }
+
+  .projects-grid {
+    column-gap: 2rem;
+  }
+  
+}
+
+/* ----- MD - TABLETS: 768px - 1024px -----*/
+
+@media (max-width: 51rem) {
+  /* 815px / 16px = 51rem*/
+  /* 51rem x 16px =  816px*/
+
+  html {
+    font-size: 50%;
+    /* 8px / 16px = 50% */
+  }
+
+}
+
+/* ----- SM - PHONES LANDSCAPE: 576px - 768px -----*/
+
+@media (max-width: 43rem) {
+  /* 680px / 16px = 43rem */
+  /* 43rem x 16px = 688px */
+
+  html {
+    font-size: 43.75%;
+    /* 7px / 16px =  43.75%*/
+  }
+
+}
+
+/* ----- XM - PHONES PORTRAIT: <576px -----*/
+
+@media (max-width: 34rem) {
+  /* 530px / 16px = 34rem */
+  /* 34rem x 16px = 544px */
+
+  html {
+    font-size: 37.5%;
+    /* 6px / 16px =  37.5%*/
+  }
+
+  .section-heading {
+    margin-bottom: 5rem;
+  }
+
+  .hero-section {
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    margin-bottom: 10rem;
+  }
+
+  .profile-picture {
+    justify-self: center;
+  }
+
+  .hero-section-flexbox {
+    align-items: center;
+  }
+
+  .social-icons-container {
+    justify-content: center;
+  }
+
+  .features-section {
+    margin-bottom: 15rem;
+  }
+
+  .features-section-flexbox {
+    display: block;
+    text-align: center;
+  }
+
+  .profile-picture-2 {
+    object-fit: cover;
+    margin-bottom: 2rem;
+    width: 25rem;
+    margin-right: 0;
+  }
+
+  #cv-btn {
+    align-self: center;
+  }
+
+  .projects-section {
+    margin-bottom: 20rem;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .project-img {
+    height: 40rem;
+  }
+
+}

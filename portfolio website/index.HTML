@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <script src="./glow.js"></script>
+  <link rel="stylesheet" href="css/app.CSS">
+  <link rel="stylesheet" href="css/queries.CSS">
+
+  <title>Keagan Portfolio Website</title>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <!-- NAVIGATION -->
+       <div class="navbar">
+        <h1 class="navbar-logo">Keagan</h1>
+
+        <ul>
+          <li><a class="nav-items" href="#">Home</a></li>
+          <li><a class="nav-items" href="#about">About</a></li>
+          <li><a class="nav-items" href="#projects">Projects</a></li>
+          <li><a class="nav-items" href="#contact">Contact</a></li>
+        </ul>
+       </div>
+
+       <!-- HERO SECTION -->
+        <section class="hero-section">
+          <img id="profile-pic" class="profile-picture" src="media/picture_250527_163944.PNG" alt="profile picture" onclick="newStyle();">
+
+          <div class="hero-section-flexbox">
+            <p>Hi, I'm</p>
+            <h2>Keagan</h2>
+            <a href="#contact" class="btn btn-primary hero-btn">Contact me</a>
+            <ul class="social-icons-container">
+              <li><a href="https://www.instagram.com/" target="_blank"><img class="social-icons" src="media/logo-instagram.svg" alt="instagram logo"></a></li>
+              <li><a href="https://www.linkedin.com/in/keagan-van-der-westhuizen-b052b0265/" target="_blank"><img class="social-icons" src="media/logo-linkedin.svg" alt="linkedIn logo"></a></li>
+            </ul>
+          </div>
+        </section>
+    </header>
+
+    <main>
+      <!-- FEATURES SECTION -->
+       <section class="features-section">
+        <h3 id="about" class="section-heading">A Bit About Me</h3>
+
+        <div class="features-section-flexbox">
+          <img class="profile-picture-2 about-me-picture" src="media/profile-pic-2.jpeg" alt="about me picture">
+
+          <div class="features-section-nested-flexbox">
+            <p>My name is <span class="highlight">Keagan Van Der Westhuizen</span>. <br><br>I started my journey to become a full stack web developer in January 2025. Along the way I have achieved a lot, facing a few set-backs in the process, but I very quickly realized the best way to become better is by challenging yourself daily. In my personal experience I learned that by making mistakes, fixing it, and learning from it every day is the best way to progress your skills. <br>I am exited to continue on this journey and to never stop learning and challenging myself</p>
+
+            
+            <a id="cv-btn" class="btn btn-secondary" href="#">DOWNLOAD CV</a>
+              
+          </div>
+
+        </div>
+
+        <div class="skills-flexbox-container">
+
+            <div class="skills-flexbox">
+              <div class="skill-bar">
+                <p>70%</p>
+              </div>
+              <p>HTML</p>
+              <p class="small-text">Intermediate</p>
+            </div>
+            
+            <div class="skills-flexbox">
+              <div class="skill-bar">
+                <p>55%</p>
+              </div>
+              <p>CSS</p>
+              <p class="small-text">Intermediate</p>
+            </div>
+
+            <div class="skills-flexbox">
+              <div class="skill-bar">
+                <p>45%</p>
+              </div>
+              <p>JavaScript</p>
+              <p class="small-text">basic</p>
+            </div>
+
+          </div>
+       </section>
+
+       <!-- PROJECTS SECTION -->
+        <section class="projects-section">
+          <h3 id="projects" class="section-heading">Projects</h3>
+
+          <div class="projects-grid">
+
+            <div class="project-items">
+              <img class="project-img" src="media/fotomatic webpage.png" alt="Fotomatic webpage">
+              <h4>Project 1</h4>
+              <a href="https://github.com/Keagan-ai/fotomatic-webpage" target="_blank" class="btn-basic">GitHub</a>
+            </div>
+
+            <div class="project-items">
+              <img class="project-img" src="media/number guesser.png" alt="Number Guesser Game">
+              <h4>Project 2</h4>
+              <a href="https://github.com/Keagan-ai/number-guesser-startup" target="_blank" class="btn-basic">GitHub</a>
+            </div>
+
+            <div class="project-items">
+              <img class="project-img" src="media/quill webpage.png" alt="Quill webpage">
+              <h4>Project 3</h4>
+              <a href="https://github.com/Keagan-ai/Quill-journal-entry-website" target="_blank" class="btn-basic">GitHub</a>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="game-section">
+          <h3 class="section-heading mini-game-heading">Mini Game</h3>
+          <a id="view-button" class="btn btn-primary play-btn">PLAY</a>
+
+          <div id="mini-game-container">
+            <h2>Ball Bounce</h2>
+            <p>
+              Let's dribble the ball on the platform using any key on your keyboard. Hold a key down to lift the ball, then release the key to drop the ball.
+            </p>
+
+            <div id='float-circle'></div> 
+            <div id='platform'></div>
+            <div id='floor'></div>
+          </div>
+
+          <a id="close-button" class="btn btn-primary play-btn">CLOSE</a>
+
+          <script src="game.js"></script>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+     <footer id="contact" class="footer">
+      <h5>Get in touch</h5>
+      <h3>Contact Me</h3>
+      <a href="mailto:keaganvanderwesthuizen@gmail.com" class="btn-basic">Email</a>
+
+      <ul class="social-icons-container footer-icons-container">
+          <li><a href="https://www.instagram.com/" target="_blank"><img class="social-icons-sm" src="media/logo-instagram.svg" alt="instagram logo"></a></li>
+        <li><a href="https://www.linkedin.com" target="_blank"><img class="social-icons-sm" src="media/logo-linkedin.svg" alt="linkedIn logo"></a></li>
+      </ul>
+
+      <ul class="footer-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+     </footer>
+  </div>
+  
+</body>
+</html>
